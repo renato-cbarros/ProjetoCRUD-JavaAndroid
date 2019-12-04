@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DeletarPedidoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearPedDel"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textViewPedDelId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID do Pedido" />
+
+        <EditText
+            android:id="@+id/editTextPedDelId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnPedDelBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <TextView
+            android:id="@+id/textViewPedDelDt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data do pedido" />
+
+        <TextView
+            android:id="@+id/textViewPedDelDtBusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewPedDelValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor" />
+
+        <TextView
+            android:id="@+id/textViewPedDelValorBusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewPedDelObserv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observação" />
+
+        <TextView
+            android:id="@+id/textViewPedDelObserBusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPedDelDeletar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deletar" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

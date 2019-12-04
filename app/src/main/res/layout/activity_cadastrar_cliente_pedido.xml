@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CadastrarClientePedidoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearCliPedCad"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textViewCliPedCadIdCli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Cliente" />
+
+        <EditText
+            android:id="@+id/editTextCliPedCadIDCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnCliPedCadBuscIDClien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar Cliente" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadNomeBusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadIdPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Pedido" />
+
+        <EditText
+            android:id="@+id/editTextCliPedCadIDPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnCliPedCadBuscIDPed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar Pedido" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observação" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadObsBusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadMod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modelo carro" />
+
+        <TextView
+            android:id="@+id/textViewCliPedCadModBusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCliPedCadCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirma pedido" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

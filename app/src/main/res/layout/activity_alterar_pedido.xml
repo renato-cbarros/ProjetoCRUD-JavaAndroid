@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AlterarPedidoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearPedAlt"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textViewPedAltId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID do Pedido" />
+
+        <EditText
+            android:id="@+id/editTextPedAltId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnPedAltBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <TextView
+            android:id="@+id/textViewPedAltDt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data do pedido" />
+
+        <EditText
+            android:id="@+id/editTextPedAltData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewPedAltValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor" />
+
+        <EditText
+            android:id="@+id/editTextPedAltValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewPedAltObser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observação" />
+
+        <EditText
+            android:id="@+id/editTextPedAltObser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewPedAltStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <EditText
+            android:id="@+id/editTextPedAltStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewPedAltModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modelo Carro" />
+
+        <EditText
+            android:id="@+id/editTextPedAltModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnPedAltAlterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.renat.wttconce">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.MenuActivity" />
+        <activity android:name=".view.CadastroClienteActivity" />
+        <activity android:name=".view.AlterarClienteActivity" />
+        <activity android:name=".view.DeletarClienteActivity" />
+        <activity android:name=".view.ListarClienteActivity" />
+        <activity android:name=".view.MenuClienteActivity" />
+        <activity android:name=".view.BuscarClienteEspecificoActivity" />
+        <activity android:name=".view.MenuPedidoActivity" />
+        <activity android:name=".view.CadastrarPedidoActivity" />
+        <activity android:name=".view.AlterarPedidoActivity" />
+        <activity android:name=".view.BuscarPedidoActivity" />
+        <activity android:name=".view.DeletarPedidoActivity" />
+        <activity android:name=".view.ListarPedidoActivity" />
+        <activity android:name=".view.MenuClientePedidoActivity" />
+        <activity android:name=".view.CadastrarClientePedidoActivity" />
+        <activity android:name=".view.AlterarClientePedidoActivity" />
+        <activity android:name=".view.BuscarClientePedidoActivity" />
+        <activity android:name=".view.DeletarClientePedidoActivity" />
+        <activity android:name=".view.ListarClientePedidoActivity"></activity>
+    </application>
+
+</manifest>
