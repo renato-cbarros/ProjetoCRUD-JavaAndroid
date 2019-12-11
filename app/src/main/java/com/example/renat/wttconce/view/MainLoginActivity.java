@@ -15,7 +15,7 @@ import com.example.renat.wttconce.model.Cliente;
 public class MainLoginActivity extends AppCompatActivity {
 
     EditText editTextLogin, editTextSenha;
-    Button btnLogar;
+    Button btnLogar, btnCadatrar;
     Cliente cli;
     ControllerCliente conCli;
 
@@ -28,6 +28,15 @@ public class MainLoginActivity extends AppCompatActivity {
         editTextSenha = (EditText) findViewById(R.id.editTextLoginSenha);
 
         btnLogar = (Button) findViewById(R.id.btnLogar);
+        btnCadatrar = (Button) findViewById(R.id.btnNaoTemCadastro);
+
+        btnCadatrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainLoginActivity.this, CadastroClienteActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -36,12 +45,16 @@ public class MainLoginActivity extends AppCompatActivity {
                 Cliente cliSai = new Cliente();
                 conCli = new ControllerCliente(MainLoginActivity.this);
 
-                cli.setLogin(editTextLogin.getText().toString());
-                cli.setSenha(editTextSenha.getText().toString());
+                if (!editTextLogin.getText().toString().equals("") && editTextLogin != null && !editTextSenha.getText().toString().equals("") && editTextSenha != null ) {
+                    cli.setLogin(editTextLogin.getText().toString());
+                    cli.setSenha(editTextSenha.getText().toString());
 
-                cliSai = conCli.validaLogin(cli);
+                    cliSai = conCli.validaLogin(cli);
 
-                //Toast.makeText(getApplicationContext(), cliSai.getLogin() + "Login realizado com sucesso! 6++++++++ " + cli.getLogin(), Toast.LENGTH_SHORT).show();
+                }else{
+                    cliSai = null;
+                    Toast.makeText(getApplicationContext(), "Erro no Login!", Toast.LENGTH_SHORT).show();
+                }
 
                 if (cliSai != null){
                     Toast.makeText(getApplicationContext(), "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();

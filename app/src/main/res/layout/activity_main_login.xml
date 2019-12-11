@@ -45,5 +45,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Logar" />
+
+        <Button
+            android:id="@+id/btnNaoTemCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não possui cadastro" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
